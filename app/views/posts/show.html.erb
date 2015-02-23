@@ -1,1 +1,14 @@
-<h1>Here are <%= @author %>'s Posts:</h1>
+<h1><%= @post.title %></h1>
+
+<p><%= @post.title %></p>
+<p><%= @post.category %></p>
+<p><%= @post.body %></p>
+
+<p>
+<%= link_to "Edit this post",  edit_post_path%>
+</p>
+
+<p>
+	<%= link_to "Back to Articles", author_posts_path(@author) %>
+</p>
+
