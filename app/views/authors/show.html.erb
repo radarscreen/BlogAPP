@@ -1,0 +1,9 @@
+<h1>Here's some info about <%= @author.first_name %></h1>
+
+<p><%= @author.first_name %>  <%= @author.last_name %></p>
+<p><%= @author.age %></p>
+
+
+<%= link_to "Check out some of #{@author.first_name}'s posts", author_posts_path(@author) %> 
+
+
