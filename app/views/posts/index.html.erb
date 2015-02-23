@@ -1,13 +1,19 @@
+<p id="notice"><%= notice %></p>
+
 <h1>Here are the author's articles:</h1>
 
 
 	
 <%= @posts.each do |post| %>
 <ul>	
-<li>
+<li class="box">
 	<%= link_to post.title, post_path(post)  %>
 </li>
 </ul>
 <% end %>
-
+<p>
 <%= link_to "Add an article", new_author_post_path %>
+</p>
+<p>
+<%= link_to "Back to Author's info", author_path(@author) %>
+</p>

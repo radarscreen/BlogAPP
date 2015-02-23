@@ -1,23 +1,23 @@
 <h1>Add an Author Below:</h1>
 
-
+<div class="form">
 <%= form_for @author do |f| %>
-<p>
+<p class="form-center">
 	<%= f.label :first_name %>
 	<%= f.text_field :first_name %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.label :last_name %>
 	<%= f.text_field :last_name %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.label :age %>
 	<%= f.number_field :age %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.submit %>
 </p>
 
 <% end %>
-
+</div>
 <%= link_to "Authors Page", authors_path %>

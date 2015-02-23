@@ -11,24 +11,26 @@
 
 
 <%= form_for @author do |f| %>
-<p>
+<p class="form-center">
 	<%= f.label :first_name %>
 	<%= f.text_field :first_name %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.label :last_name %>
 	<%= f.text_field :last_name %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.label :age %>
 	<%= f.number_field :age %>
 </p>
-<p>
+<p class="form-center">
 	<%= f.submit %>
 </p>
 <% end %>
 
-
+<p>
 <%= link_to "Delete", author_path(@author), method: "delete", data: { confirm: "Are you sure you want to remove this author?"} %>
-
+</p>
+<p>
 <%= link_to "Back to #{@author.first_name}", author_path %>
+</p>

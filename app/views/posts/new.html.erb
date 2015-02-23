@@ -1,21 +1,21 @@
 <h1>Make a new post!</h1>
 
 <%= form_for ([:author, @post]) do |p| %>
-	<p>
+	<p class="form-center">
 		<%= p.label :title %>
 		<%= p.text_field :title %>
 	</p>
-	<p>
+	<p class="form-center">
 		<%= p.label :category	%>
 		<%= p.text_field :category %>
 	</p>
-	<p>
+	<p class="form-center">
 		<%= p.label :body %>
 		<%= p.text_area :body %>
 	</p>
 	<p>
 		
-	</p>
+	</p class="form-center">
 <%= p.submit %>
 <% end %>
 
